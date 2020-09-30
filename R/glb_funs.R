@@ -1,6 +1,6 @@
 
 # adjusted code from Rcsdp package:
-glbOnArray <- function(Cov, callback = function(){}) {
+glbOnArray_nocpp <- function(Cov, callback = function(){}) {
 
   d <- dim(Cov)
   if (length(d) == 2L) { # turn it into an array if it is a matrix
